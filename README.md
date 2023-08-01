@@ -1,6 +1,6 @@
 # proyect_shop
 
-A new Flutter project.
+Tienda online en ios y android
 
 ## Getting Started
 
