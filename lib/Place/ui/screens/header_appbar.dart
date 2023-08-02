@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'gradient_back.dart';
-import 'card_image_list.dart';
+import '../../../Widgets/gradient_back.dart';
+import '../widgets/card_image_list.dart';
 
 
 class HeaderAppBar extends StatelessWidget{

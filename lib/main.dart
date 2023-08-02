@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
+import 'Place/ui/widgets/description_place.dart';
+import 'Place/ui/widgets/review_list.dart';
+import 'Widgets/gradient_back.dart';
 import 'package:flutter/services.dart';
-import 'header_appbar.dart';
-import 'platzi_trips.dart';
+import 'Place/ui/screens/header_appbar.dart';
+import 'Widgets/platzi_trips.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'User/bloc/bloc_user.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -24,7 +26,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return BlocProvider(
+        child: MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -39,6 +42,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const PlatziTrips(),
+    ),
+        bloc: UserBloc()
     );
   }
 }

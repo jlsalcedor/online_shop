@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'gradient_back.dart';
-import 'bottoms_profile.dart';
-import 'review.dart';
+import '../../../Widgets/gradient_back.dart';
+import '../widgets/bottoms_profile.dart';
+import '../../../Place/ui/widgets/review.dart';
 
 class ProfileTrips extends StatelessWidget {
   const ProfileTrips({Key? key}) : super(key: key);
